@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<canvas id="canvas" class="controller" style="background-color: #ccc;" width="800" height="600">
+
+	</canvas>
+
+
+</body>
+
+<script type="text/javascript" src="game.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="websocket.js"></script>
+<script type="text/javascript" src="socket-wrap.js"></script>
+<script type="text/javascript" src="controller.js"></script>
+<script src="leap.js"></script>
+<script type="text/javascript" src="curtsy.js"></script>
+<script type="text/javascript" src="underscore.js"></script>
+
+<script type="text/javascript" src="inputListener.js"></script>
+
+<script type="text/javascript">
+	
+	/*
+	 * Globale parametere:
+	 *	1. wsUri: Addressen til Zatacka-serveren
+	 *	2. playerName: Ønsket navn på scoreboardet
+	 */
+	var wsUri = "ws://localhost:8080/";
+	var playerName = '<navn>';
+
+
+	/*
+	 * Funksjonen leap tar imot en 'curve'-controller, 
+	 * en unik id 'uuid' som brukes til å identifisere
+	 * hvilken 'curve' dere styrer.
+	 *
+	 * leap (controller:object, uuid:string, x:float, y:float, z:float)
+	 *
+	 * Parametere:
+	 *	1. x: x-koordinaten til hånden din over Leap
+	 *   2. y: y-koordinaten
+	 *   3. z: z-koordinaten
+	 */
+
+	var leaping = function(controller, uuid, x, y, z) {
+
+	/* 
+	 * For å bevege seg til:
+	 *
+	 *  - venstre: 	controller.moveLeft(uuid)
+	 *  - høyre: 	controller.moveRight(uuid)
+	 *  - rett frem: controller.straight(uuid)
+	 *
+	 */
+
+	
+	};
+</script>
+<script type="text/javascript" src="app.js"></script>
+</html>
